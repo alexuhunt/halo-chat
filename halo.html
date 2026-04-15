@@ -2,27 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <title>Halo Chat Test</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%;
             width: 100%;
+            height: 100%;
             overflow: hidden;
+        }
+
+        #halo-chat {
+            width: 100%;
+            height: 100%;
+            min-height: 700px;
         }
     </style>
 </head>
 <body>
 
-<script>
-window.haloChatConfig = {
-    chatServiceUrl: "https://support.mysakon.com/api",
-    configId: "34968a4f-08db-412e-bd61-d962e6220c79",
-    configKey: "bac7c97a-3b3c-4648-8542-7cff5a7d06f2"
-};
-</script>
+    <div id="halo-chat"></div>
 
-<script src="https://support.mysakon.com/chat.js"></script>
+    <script>
+        var haloChatConfig = {
+            chatServiceUrl: "https://support.mysakon.com/api",
+            configId: "34968a4f-08db-412e-bd61-d962e6220c79",
+            configKey: "bac7c97a-3b3c-4648-8542-7cff5a7d06f2"
+        };
+    </script>
+
+    <script src="https://support.mysakon.com/chat/index.js"></script>
 
 </body>
 </html>
